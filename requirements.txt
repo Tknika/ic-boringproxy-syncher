@@ -1,0 +1,3 @@
+firebase-admin==5.2.0
+python-dotenv==0.19.2
+boringproxy-api==0.2.3

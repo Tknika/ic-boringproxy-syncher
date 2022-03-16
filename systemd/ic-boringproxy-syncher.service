@@ -1,0 +1,16 @@
+[Unit]
+Description=IoMBian Configurator Boringproxy Syncher
+Wants=network-online.target
+After=network.target network-online.target
+
+[Service]
+Type=simple
+User=aiturrioz
+Restart=always
+RestartSec=5
+
+WorkingDirectory=/opt/ic-boringproxy-syncher
+ExecStart=/opt/ic-boringproxy-syncher/venv/bin/python /opt/ic-boringproxy-syncher/main.py
+
+[Install]
+WantedBy=multi-user.target
